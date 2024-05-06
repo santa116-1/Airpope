@@ -17,7 +17,7 @@ pub(crate) mod rankings;
 
 #[derive(Subcommand, Clone)]
 pub(crate) enum KMKCCommands {
-    /// Authenticate tosho with your KM account. (Experimental)
+    /// Authenticate airpope with your KM account. (Experimental)
     ///
     /// The following use email/password authentication
     Auth {
@@ -29,7 +29,7 @@ pub(crate) enum KMKCCommands {
         #[arg(short, long, value_enum, default_value = "android")]
         r#type: crate::r#impl::kmkc::accounts::DeviceKind,
     },
-    /// Authenticate tosho with your KM account.
+    /// Authenticate airpope with your KM account.
     ///
     /// The following use user ID/hash key to authenticate as mobile.
     AuthMobile {
@@ -41,7 +41,7 @@ pub(crate) enum KMKCCommands {
         #[arg(short, long, value_enum, default_value = "android")]
         r#type: crate::r#impl::kmkc::accounts::DeviceKind,
     },
-    /// Authenticate tosho with your KM account.
+    /// Authenticate airpope with your KM account.
     ///
     /// The following use Netscape cookies to authenticate as web.
     AuthWeb {

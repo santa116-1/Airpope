@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_rbean::{RBClient, RBPlatform};
+use airpope_rbean::{RBClient, RBPlatform};
 
 use crate::{
     cli::ExitCode,

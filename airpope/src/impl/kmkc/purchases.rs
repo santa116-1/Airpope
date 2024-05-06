@@ -1,6 +1,6 @@
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_kmkc::{
+use airpope_kmkc::{
     constants::BASE_HOST,
     models::{EpisodeNode, TicketInfoType},
     KMClient,

@@ -1,6 +1,6 @@
 //! A module containing information related to chapter.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 #![allow(clippy::derive_partial_eq_without_eq)]
 
@@ -57,7 +57,7 @@ impl Chapter {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::Chapter;
+    /// use airpope_musq::proto::Chapter;
     ///
     /// let mut chapter = Chapter {
     ///     id: 1,
@@ -89,7 +89,7 @@ impl Chapter {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::Chapter;
+    /// use airpope_musq::proto::Chapter;
     ///
     /// let mut chapter = Chapter {
     ///     id: 1,
@@ -181,7 +181,7 @@ impl ChapterV2 {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::ChapterV2;
+    /// use airpope_musq::proto::ChapterV2;
     ///
     /// let mut chapter = ChapterV2 {
     ///     id: 1,
@@ -216,7 +216,7 @@ impl ChapterV2 {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::ChapterV2;
+    /// use airpope_musq::proto::ChapterV2;
     ///
     /// let mut chapter = ChapterV2 {
     ///     id: 1,
@@ -291,7 +291,7 @@ impl ChapterPage {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::ChapterPage;
+    /// use airpope_musq::proto::ChapterPage;
     ///
     /// let page = ChapterPage {
     ///     url: "/path/to/image.avif".to_string(),
@@ -315,7 +315,7 @@ impl ChapterPage {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::ChapterPage;
+    /// use airpope_musq::proto::ChapterPage;
     ///
     /// let page = ChapterPage {
     ///     url: "/path/to/image.avif".to_string(),
@@ -342,7 +342,7 @@ impl ChapterPage {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::ChapterPage;
+    /// use airpope_musq::proto::ChapterPage;
     ///
     /// let page = ChapterPage {
     ///     url: "/path/to/image.avif".to_string(),

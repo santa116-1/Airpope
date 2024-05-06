@@ -1,7 +1,7 @@
-# tosho-macros
+# airpope-macros
 
-A collection of macros used by [`tosho`](https://github.com/noaione/tosho-mango) and the other sources crates.
+A collection of macros used by [`airpope`](https://github.com/noaione/airpope-mango) and the other sources crates.
 
 ## License
 
-This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or http://opensource.org/licenses/MIT)
+This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or http://opensource.org/licenses/MIT)

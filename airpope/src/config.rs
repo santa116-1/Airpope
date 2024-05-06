@@ -99,7 +99,7 @@ pub(crate) fn get_user_path() -> std::path::PathBuf {
     #[cfg(not(windows))]
     let user_path: std::path::PathBuf = {
         let mut home = BaseDirs::new().unwrap().home_dir().to_path_buf();
-        home.push(".toshomango");
+        home.push(".airpopemango");
         home
     };
     user_path

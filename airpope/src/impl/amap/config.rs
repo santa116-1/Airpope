@@ -1,7 +1,7 @@
 #![allow(clippy::derive_partial_eq_without_eq)]
 
-use tosho_amap::{models::AccountUserInfo, AMConfig};
-use tosho_macros::EnumName;
+use airpope_amap::{models::AccountUserInfo, AMConfig};
+use airpope_macros::EnumName;
 
 pub const PREFIX: &str = "amap";
 

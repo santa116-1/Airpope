@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
+use airpope_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
 
 use crate::{
     cli::ExitCode,

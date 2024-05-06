@@ -74,14 +74,14 @@ for crate in ALL_CRATES:
         print(f" Adding {package_name} to publish list")
         PUBLISH_CRATE.append(package_name)
 
-# "tosho" should be last
-if "tosho" in PUBLISH_CRATE:
-    PUBLISH_CRATE.remove("tosho")
-    PUBLISH_CRATE.append("tosho")
+# "airpope" should be last
+if "airpope" in PUBLISH_CRATE:
+    PUBLISH_CRATE.remove("airpope")
+    PUBLISH_CRATE.append("airpope")
 # macros should be first
-if "tosho-macros" in PUBLISH_CRATE:
-    PUBLISH_CRATE.remove("tosho-macros")
-    PUBLISH_CRATE.insert(0, "tosho-macros")
+if "airpope-macros" in PUBLISH_CRATE:
+    PUBLISH_CRATE.remove("airpope-macros")
+    PUBLISH_CRATE.insert(0, "airpope-macros")
 
 print("Publishing:", PUBLISH_CRATE)
 

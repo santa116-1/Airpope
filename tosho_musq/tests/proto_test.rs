@@ -1,7 +1,7 @@
 use std::{fs::File, io::Read, path::PathBuf, str::FromStr};
 
 use prost::Message;
-use tosho_musq::proto::{
+use airpope_musq::proto::{
     ChapterViewer, ChapterViewerV2, HomeViewV2, MangaDetail, MangaDetailV2, MyPageView,
     PointHistoryView, PointShopView, Status,
 };
@@ -10,7 +10,7 @@ fn common_reader(file_name: &str) -> Result<String, std::io::Error> {
     let manifest_dir = PathBuf::from_str(env!("CARGO_MANIFEST_DIR")).unwrap();
     let root_dir = manifest_dir.parent().unwrap();
 
-    let assets_dir = root_dir.join("tosho_assets");
+    let assets_dir = root_dir.join("airpope_assets");
 
     if !assets_dir.exists() {
         return Err(std::io::Error::new(

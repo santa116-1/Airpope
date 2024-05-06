@@ -1,8 +1,8 @@
 #![allow(clippy::derive_partial_eq_without_eq)]
 
 use clap::ValueEnum;
-use tosho_macros::EnumName;
-use tosho_rbean::{RBConfig, RBLoginResponse, RBPlatform};
+use airpope_macros::EnumName;
+use airpope_rbean::{RBConfig, RBLoginResponse, RBPlatform};
 
 pub const PREFIX: &str = "rbean";
 

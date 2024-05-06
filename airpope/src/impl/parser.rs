@@ -1,7 +1,7 @@
 use std::str::FromStr;
 
 use clap::ValueEnum;
-use tosho_macros::EnumName;
+use airpope_macros::EnumName;
 
 pub(crate) type CommaSeparatedNumber = Vec<usize>;
 pub(crate) type CommaSeparatedString = Vec<String>;
@@ -62,30 +62,30 @@ impl ValueEnum for WeeklyCodeCli {
     }
 }
 
-impl From<WeeklyCodeCli> for tosho_musq::WeeklyCode {
+impl From<WeeklyCodeCli> for airpope_musq::WeeklyCode {
     fn from(value: WeeklyCodeCli) -> Self {
         match value {
-            WeeklyCodeCli::Sunday => tosho_musq::WeeklyCode::Sunday,
-            WeeklyCodeCli::Monday => tosho_musq::WeeklyCode::Monday,
-            WeeklyCodeCli::Tuesday => tosho_musq::WeeklyCode::Tuesday,
-            WeeklyCodeCli::Wednesday => tosho_musq::WeeklyCode::Wednesday,
-            WeeklyCodeCli::Thursday => tosho_musq::WeeklyCode::Thursday,
-            WeeklyCodeCli::Friday => tosho_musq::WeeklyCode::Friday,
-            WeeklyCodeCli::Saturday => tosho_musq::WeeklyCode::Saturday,
+            WeeklyCodeCli::Sunday => airpope_musq::WeeklyCode::Sunday,
+            WeeklyCodeCli::Monday => airpope_musq::WeeklyCode::Monday,
+            WeeklyCodeCli::Tuesday => airpope_musq::WeeklyCode::Tuesday,
+            WeeklyCodeCli::Wednesday => airpope_musq::WeeklyCode::Wednesday,
+            WeeklyCodeCli::Thursday => airpope_musq::WeeklyCode::Thursday,
+            WeeklyCodeCli::Friday => airpope_musq::WeeklyCode::Friday,
+            WeeklyCodeCli::Saturday => airpope_musq::WeeklyCode::Saturday,
         }
     }
 }
 
-impl From<tosho_musq::WeeklyCode> for WeeklyCodeCli {
-    fn from(value: tosho_musq::WeeklyCode) -> Self {
+impl From<airpope_musq::WeeklyCode> for WeeklyCodeCli {
+    fn from(value: airpope_musq::WeeklyCode) -> Self {
         match value {
-            tosho_musq::WeeklyCode::Sunday => WeeklyCodeCli::Sunday,
-            tosho_musq::WeeklyCode::Monday => WeeklyCodeCli::Monday,
-            tosho_musq::WeeklyCode::Tuesday => WeeklyCodeCli::Tuesday,
-            tosho_musq::WeeklyCode::Wednesday => WeeklyCodeCli::Wednesday,
-            tosho_musq::WeeklyCode::Thursday => WeeklyCodeCli::Thursday,
-            tosho_musq::WeeklyCode::Friday => WeeklyCodeCli::Friday,
-            tosho_musq::WeeklyCode::Saturday => WeeklyCodeCli::Saturday,
+            airpope_musq::WeeklyCode::Sunday => WeeklyCodeCli::Sunday,
+            airpope_musq::WeeklyCode::Monday => WeeklyCodeCli::Monday,
+            airpope_musq::WeeklyCode::Tuesday => WeeklyCodeCli::Tuesday,
+            airpope_musq::WeeklyCode::Wednesday => WeeklyCodeCli::Wednesday,
+            airpope_musq::WeeklyCode::Thursday => WeeklyCodeCli::Thursday,
+            airpope_musq::WeeklyCode::Friday => WeeklyCodeCli::Friday,
+            airpope_musq::WeeklyCode::Saturday => WeeklyCodeCli::Saturday,
         }
     }
 }

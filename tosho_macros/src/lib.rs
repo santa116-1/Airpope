@@ -1,10 +1,10 @@
-//! # tosho-macros
+//! # airpope-macros
 //!
-//! A collection of macros used by [`tosho`](https://github.com/noaione/tosho-mango) and the other sources crates.
+//! A collection of macros used by [`airpope`](https://github.com/noaione/airpope-mango) and the other sources crates.
 //!
 //! ## License
 //!
-//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
+//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
 
 use proc_macro::TokenStream;
 
@@ -13,7 +13,7 @@ use proc_macro::TokenStream;
 /// # Example
 /// ```
 /// use serde::Serialize;
-/// use tosho_macros::SerializeEnum;
+/// use airpope_macros::SerializeEnum;
 ///
 /// #[derive(SerializeEnum)]
 /// enum TestEnum {
@@ -44,7 +44,7 @@ pub fn serializenum_derive(input: TokenStream) -> TokenStream {
 /// # Example
 /// ```
 /// use serde::Deserialize;
-/// use tosho_macros::DeserializeEnum;
+/// use airpope_macros::DeserializeEnum;
 ///
 /// #[derive(DeserializeEnum, PartialEq, Eq, Debug)]
 /// enum TestEnum {
@@ -52,7 +52,7 @@ pub fn serializenum_derive(input: TokenStream) -> TokenStream {
 ///     Read,
 /// }
 ///
-/// tosho_macros::enum_error!(TestEnumFromStrError);
+/// airpope_macros::enum_error!(TestEnumFromStrError);
 ///
 /// impl std::str::FromStr for TestEnum {
 ///     type Err = TestEnumFromStrError;
@@ -82,7 +82,7 @@ pub fn deserializeenum_derive(input: TokenStream) -> TokenStream {
 /// # Example
 /// ```
 /// use serde::Serialize;
-/// use tosho_macros::SerializeEnum32;
+/// use airpope_macros::SerializeEnum32;
 ///
 /// #[derive(SerializeEnum32)]
 /// enum TestEnum {
@@ -101,7 +101,7 @@ pub fn serializenum32_derive(input: TokenStream) -> TokenStream {
 /// # Example
 /// ```
 /// use serde::Deserialize;
-/// use tosho_macros::DeserializeEnum32;
+/// use airpope_macros::DeserializeEnum32;
 ///
 /// #[derive(DeserializeEnum32)]
 /// enum TestEnum {
@@ -120,7 +120,7 @@ pub fn deserializeenum32_derive(input: TokenStream) -> TokenStream {
 /// # Example
 /// ```
 /// use serde::Deserialize;
-/// use tosho_macros::DeserializeEnum32Fallback;
+/// use airpope_macros::DeserializeEnum32Fallback;
 ///
 /// #[derive(DeserializeEnum32Fallback, Default)]
 /// enum TestEnum {
@@ -140,7 +140,7 @@ pub fn deserializeenum32fallback_derive(input: TokenStream) -> TokenStream {
 ///
 /// # Example
 /// ```
-/// use tosho_macros::EnumName;
+/// use airpope_macros::EnumName;
 ///
 /// #[derive(EnumName, Clone, Debug)]
 /// enum TestEnum {
@@ -161,7 +161,7 @@ pub fn enumname_derive(input: TokenStream) -> TokenStream {
 ///
 /// # Example
 /// ```
-/// use tosho_macros::EnumCount;
+/// use airpope_macros::EnumCount;
 ///
 /// #[derive(EnumCount, Clone, Debug)]
 /// enum TestEnum {
@@ -208,7 +208,7 @@ impl syn::parse::Parse for EnumErrorMacroInput {
 ///
 /// # Example
 /// ```
-/// use tosho_macros::enum_error;
+/// use airpope_macros::enum_error;
 ///
 /// enum_error!(TestEnumFromStrError);
 /// ```

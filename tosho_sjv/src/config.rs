@@ -1,7 +1,7 @@
 //! Provides the configuration Struct for the client.
 //!
 //! ```rust
-//! use tosho_sjv::{SJConfig, SJPlatform};
+//! use airpope_sjv::{SJConfig, SJPlatform};
 //!
 //! let config = SJConfig {
 //!     user_id: 123,
@@ -18,7 +18,7 @@ use crate::models::AccountLoginResponse;
 /// Since the original has two separate application.
 ///
 /// ```
-/// use tosho_sjv::SJMode;
+/// use airpope_sjv::SJMode;
 ///
 /// let mode = SJMode::SJ;
 /// ```
@@ -34,7 +34,7 @@ pub enum SJMode {
 /// The platform to use.
 ///
 /// ```
-/// use tosho_sjv::SJPlatform;
+/// use airpope_sjv::SJPlatform;
 ///
 /// let platform = SJPlatform::Android;
 /// ```
@@ -52,7 +52,7 @@ pub enum SJPlatform {
 /// The configuration for the client.
 ///
 /// ```
-/// use tosho_sjv::{SJConfig, SJPlatform};
+/// use airpope_sjv::{SJConfig, SJPlatform};
 ///
 /// let config = SJConfig {
 ///     user_id: 123,
@@ -98,7 +98,7 @@ impl SJConfig {
     /// * `instance` - The instance ID.
     ///
     /// ```no_run
-    /// use tosho_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
+    /// use airpope_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
     ///
     /// #[tokio::main]
     /// async fn main() {

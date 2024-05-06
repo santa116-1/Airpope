@@ -3,7 +3,7 @@
 //! All the following structs are a lazy static.
 //!
 //! ```rust
-//! use tosho_kmkc::constants::get_constants;
+//! use airpope_kmkc::constants::get_constants;
 //!
 //! let _ = get_constants(2); // Android
 //! ```
@@ -186,7 +186,7 @@ lazy_static! {
 ///
 /// # Examples
 /// ```
-/// use tosho_kmkc::constants::get_constants;
+/// use airpope_kmkc::constants::get_constants;
 ///
 /// let _ = get_constants(2); // Android
 /// let _ = get_constants(3); // Web

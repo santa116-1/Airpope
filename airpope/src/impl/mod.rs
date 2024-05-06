@@ -54,7 +54,7 @@ pub(crate) fn clean_filename(filename: &str) -> String {
     for reserved in WINDOWS_RESERVED {
         if cleaned.eq_ignore_ascii_case(reserved) {
             // append a dash to the end
-            return format!("tosho-{}", cleaned);
+            return format!("airpope-{}", cleaned);
         }
     }
 

@@ -1,6 +1,6 @@
 //! A module containing information related to manga or chapters.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use chrono::{DateTime, FixedOffset};
 use serde::{Deserialize, Deserializer, Serialize};

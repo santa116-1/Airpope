@@ -1,7 +1,7 @@
 use clap::ValueEnum;
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_musq::MUClient;
+use airpope_musq::MUClient;
 
 use crate::{
     cli::ExitCode,

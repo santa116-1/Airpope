@@ -2,7 +2,7 @@ use std::path::PathBuf;
 
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_kmkc::{
+use airpope_kmkc::{
     constants::BASE_HOST,
     models::{TitleNode, TitleTicketListNode, UserPointResponse},
     KMClient, KMConfigWeb,
@@ -86,9 +86,9 @@ pub(super) async fn common_purchase_select(
     no_input: bool,
     console: &crate::term::Terminal,
 ) -> (
-    anyhow::Result<Vec<tosho_kmkc::models::EpisodeNode>>,
+    anyhow::Result<Vec<airpope_kmkc::models::EpisodeNode>>,
     Option<TitleNode>,
-    Vec<tosho_kmkc::models::EpisodeNode>,
+    Vec<airpope_kmkc::models::EpisodeNode>,
     Option<PurchasePoint>,
 ) {
     console.info(&cformat!(
@@ -237,7 +237,7 @@ pub(super) async fn common_purchase_select(
     let selected_chapters = console.select(sel_prompt, select_choices);
     match selected_chapters {
         Some(selected) => {
-            let mapped_chapters: Vec<tosho_kmkc::models::EpisodeNode> = selected
+            let mapped_chapters: Vec<airpope_kmkc::models::EpisodeNode> = selected
                 .iter()
                 .map(|ch| {
                     let ch_id = ch.name.parse::<i32>().unwrap();

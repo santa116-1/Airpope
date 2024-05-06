@@ -1,6 +1,6 @@
 //! A module containing common models used in the library.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use serde::{Deserialize, Serialize};
 
@@ -29,7 +29,7 @@ impl StatusResponse {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::StatusResponse;
+    /// use airpope_kmkc::models::StatusResponse;
     ///
     /// let response = StatusResponse {
     ///     status: "success".to_string(),

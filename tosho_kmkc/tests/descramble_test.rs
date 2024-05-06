@@ -5,13 +5,13 @@ use std::{
     str::FromStr,
 };
 
-use tosho_kmkc::imaging::descramble_image;
+use airpope_kmkc::imaging::descramble_image;
 
 fn open_assets_file(file_name: &str) -> Option<File> {
     let manifest_dir = PathBuf::from_str(env!("CARGO_MANIFEST_DIR")).unwrap();
     let root_dir = manifest_dir.parent().unwrap();
 
-    let assets_dir = root_dir.join("tosho_assets");
+    let assets_dir = root_dir.join("airpope_assets");
 
     if !assets_dir.exists() {
         return None;

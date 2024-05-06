@@ -9,7 +9,7 @@ fn main() {
         let description = env!("CARGO_PKG_DESCRIPTION");
 
         let mut res = winres::WindowsResource::new();
-        res.set_icon("assets/tosho-logo.ico");
+        res.set_icon("assets/airpope-logo.ico");
         res.set("ProductName", name);
         res.set("ProductVersion", version);
         res.set("FileVersion", version);

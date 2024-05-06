@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_amap::{constants::BASE_HOST, models::ComicTagInfo, AMClient};
+use airpope_amap::{constants::BASE_HOST, models::ComicTagInfo, AMClient};
 
 use crate::{cli::ExitCode, linkify};
 

@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_sjv::{
+use airpope_sjv::{
     constants::{EXPAND_SJ_NAME, EXPAND_VM_NAME},
     models::MangaImprint,
     SJClient,
@@ -31,7 +31,7 @@ pub(crate) async fn sjv_search(
 
             let filtered = search_manga_by_text(&results.series, query);
 
-            let filtered: Vec<tosho_sjv::models::MangaDetail> =
+            let filtered: Vec<airpope_sjv::models::MangaDetail> =
                 filtered.iter().map(|&x| x.clone()).collect();
 
             if filtered.is_empty() {
@@ -93,7 +93,7 @@ pub(crate) async fn sjv_title_info(
 
             let manga_url = format!(
                 "https://{}/{}",
-                tosho_sjv::constants::BASE_HOST.as_str(),
+                airpope_sjv::constants::BASE_HOST.as_str(),
                 result.slug
             );
             let linked = linkify!(&manga_url, &result.title);
@@ -150,19 +150,19 @@ pub(crate) async fn sjv_title_info(
                         sort_chapters(&mut chapters_info, true);
                         for chapter in chapters_info {
                             let episode_url = match chapter.subscription_type {
-                                Some(tosho_sjv::models::SubscriptionType::SJ) => {
+                                Some(airpope_sjv::models::SubscriptionType::SJ) => {
                                     format!(
                                         "https://{}/{}/{}/chapter/{}?action=read",
-                                        *tosho_sjv::constants::BASE_HOST,
+                                        *airpope_sjv::constants::BASE_HOST,
                                         *EXPAND_SJ_NAME,
                                         result.slug,
                                         chapter.id
                                     )
                                 }
-                                Some(tosho_sjv::models::SubscriptionType::VM) => {
+                                Some(airpope_sjv::models::SubscriptionType::VM) => {
                                     format!(
                                         "https://{}/{}/{}/chapter/{}?action=read",
-                                        *tosho_sjv::constants::BASE_HOST,
+                                        *airpope_sjv::constants::BASE_HOST,
                                         *EXPAND_VM_NAME,
                                         result.slug,
                                         chapter.id

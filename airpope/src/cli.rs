@@ -14,8 +14,8 @@ use crate::r#impl::{
 pub(crate) type ExitCode = u32;
 
 #[derive(Parser)]
-#[command(name = "tosho")]
-#[command(bin_name = "tosho")]
+#[command(name = "airpope")]
+#[command(bin_name = "airpope")]
 #[command(author, version = app_version(), about, long_about = None, styles = cli_styles())]
 #[command(propagate_version = true, disable_help_subcommand = true)]
 pub(crate) struct ToshoCli {
@@ -92,7 +92,7 @@ pub(crate) enum ToshoCommands {
         #[command(subcommand)]
         subcommand: ToolsCommands,
     },
-    /// Update tosho to the latest version
+    /// Update airpope to the latest version
     Update,
 }
 

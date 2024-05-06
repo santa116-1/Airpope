@@ -1,7 +1,7 @@
 use aho_corasick::AhoCorasick;
 use color_print::cformat;
-use tosho_sjv::constants::BASE_HOST;
-use tosho_sjv::{
+use airpope_sjv::constants::BASE_HOST;
+use airpope_sjv::{
     models::{MangaChapterDetail, MangaDetail, MangaStoreInfo, MangaStoreResponse},
     SJClient,
 };
@@ -112,13 +112,13 @@ pub(super) async fn get_cached_store_data(client: &SJClient) -> anyhow::Result<W
 
     let base_path = get_user_path();
     let mode_name = match client.get_mode() {
-        tosho_sjv::SJMode::SJ => "sj",
-        tosho_sjv::SJMode::VM => "vm",
+        airpope_sjv::SJMode::SJ => "sj",
+        airpope_sjv::SJMode::VM => "vm",
     };
     let plat_name = match client.get_platform() {
-        tosho_sjv::SJPlatform::Android => "android",
-        tosho_sjv::SJPlatform::Apple => "apple",
-        tosho_sjv::SJPlatform::Web => "web",
+        airpope_sjv::SJPlatform::Android => "android",
+        airpope_sjv::SJPlatform::Apple => "apple",
+        airpope_sjv::SJPlatform::Web => "web",
     };
 
     let filename = format!("sjv_store_cache_{}_{}.json", mode_name, plat_name);

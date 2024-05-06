@@ -1,6 +1,6 @@
 //! A module containing information related to episode/chapter.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
@@ -79,7 +79,7 @@ impl ImagePageNode {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNode;
+    /// use airpope_kmkc::models::ImagePageNode;
     ///
     /// let page = ImagePageNode {
     ///     index: 0,
@@ -101,7 +101,7 @@ impl ImagePageNode {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNode;
+    /// use airpope_kmkc::models::ImagePageNode;
     ///
     /// let page = ImagePageNode {
     ///     index: 0,
@@ -125,7 +125,7 @@ impl ImagePageNode {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNode;
+    /// use airpope_kmkc::models::ImagePageNode;
     ///
     /// let page = ImagePageNode {
     ///     index: 0,
@@ -177,7 +177,7 @@ impl ImagePageNodeStr {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNodeStr;
+    /// use airpope_kmkc::models::ImagePageNodeStr;
     ///
     /// let page = ImagePageNodeStr("https://example.com/image.jpg?test=ignore".to_string());
     ///
@@ -192,7 +192,7 @@ impl ImagePageNodeStr {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNodeStr;
+    /// use airpope_kmkc::models::ImagePageNodeStr;
     ///
     /// let page = ImagePageNodeStr("https://example.com/image.jpg?test=ignore".to_string());
     ///
@@ -207,7 +207,7 @@ impl ImagePageNodeStr {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::ImagePageNodeStr;
+    /// use airpope_kmkc::models::ImagePageNodeStr;
     ///
     /// let page = ImagePageNodeStr("https://example.com/image.jpg?test=ignore".to_string());
     ///

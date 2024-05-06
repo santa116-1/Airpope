@@ -8,8 +8,8 @@ fn create_updater(
 ) -> Result<Box<dyn self_update::update::ReleaseUpdate>, self_update::errors::Error> {
     self_update::backends::github::Update::configure()
         .repo_owner("noaione")
-        .repo_name("tosho-mango")
-        .bin_name("tosho")
+        .repo_name("airpope-mango")
+        .bin_name("airpope")
         .show_download_progress(true)
         .current_version(cargo_crate_version!())
         .show_output(debug)
@@ -58,7 +58,7 @@ pub(crate) async fn check_for_update(console: &crate::term::Terminal) -> anyhow:
             latest_version.version
         ));
         console.info(&cformat!(
-            "Update now by running <m,s>tosho update</> or <m,s>cargo [b]install tosho</>!",
+            "Update now by running <m,s>airpope update</> or <m,s>cargo [b]install airpope</>!",
         ));
     }
 

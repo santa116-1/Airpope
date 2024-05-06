@@ -1,7 +1,7 @@
 //! Provides the configuration Struct for the client.
 //!
 //! ```rust
-//! use tosho_kmkc::{KMConfigMobile, KMConfigMobilePlatform};
+//! use airpope_kmkc::{KMConfigMobile, KMConfigMobilePlatform};
 //!
 //! let config = KMConfigMobile {
 //!     user_id: "123".to_string(),
@@ -13,7 +13,7 @@
 use reqwest::Url;
 use reqwest_cookie_store::{CookieStoreMutex, RawCookie};
 use time::OffsetDateTime;
-use tosho_macros::{EnumName, EnumU32};
+use airpope_macros::{EnumName, EnumU32};
 use urlencoding::{decode, encode};
 
 use crate::constants::BASE_HOST;

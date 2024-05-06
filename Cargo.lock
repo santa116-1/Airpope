@@ -2315,7 +2315,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tosho"
+name = "airpope"
 version = "0.5.0-dev"
 dependencies = [
  "aho-corasick",
@@ -2341,19 +2341,19 @@ dependencies = [
  "serde_json",
  "supports-hyperlinks",
  "tokio",
- "tosho-amap",
- "tosho-kmkc",
- "tosho-macros",
- "tosho-musq",
- "tosho-rbean",
- "tosho-sjv",
+ "airpope-amap",
+ "airpope-kmkc",
+ "airpope-macros",
+ "airpope-musq",
+ "airpope-rbean",
+ "airpope-sjv",
  "uuid",
  "windows-sys 0.52.0",
  "winres",
 ]
 
 [[package]]
-name = "tosho-amap"
+name = "airpope-amap"
 version = "0.3.3"
 dependencies = [
  "anyhow",
@@ -2369,11 +2369,11 @@ dependencies = [
  "sha2",
  "time",
  "tokio",
- "tosho-macros",
+ "airpope-macros",
 ]
 
 [[package]]
-name = "tosho-kmkc"
+name = "airpope-kmkc"
 version = "0.3.4"
 dependencies = [
  "anyhow",
@@ -2391,12 +2391,12 @@ dependencies = [
  "sha2",
  "time",
  "tokio",
- "tosho-macros",
+ "airpope-macros",
  "urlencoding",
 ]
 
 [[package]]
-name = "tosho-macros"
+name = "airpope-macros"
 version = "0.3.1"
 dependencies = [
  "quote",
@@ -2405,7 +2405,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tosho-musq"
+name = "airpope-musq"
 version = "0.3.4"
 dependencies = [
  "anyhow",
@@ -2417,11 +2417,11 @@ dependencies = [
  "reqwest",
  "serde",
  "tokio",
- "tosho-macros",
+ "airpope-macros",
 ]
 
 [[package]]
-name = "tosho-rbean"
+name = "airpope-rbean"
 version = "0.1.3"
 dependencies = [
  "anyhow",
@@ -2433,11 +2433,11 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
- "tosho-macros",
+ "airpope-macros",
 ]
 
 [[package]]
-name = "tosho-sjv"
+name = "airpope-sjv"
 version = "0.3.5"
 dependencies = [
  "anyhow",
@@ -2452,7 +2452,7 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
- "tosho-macros",
+ "airpope-macros",
 ]
 
 [[package]]

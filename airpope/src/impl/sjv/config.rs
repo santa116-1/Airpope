@@ -1,8 +1,8 @@
 #![allow(clippy::derive_partial_eq_without_eq)]
 
 use clap::ValueEnum;
-use tosho_macros::EnumName;
-use tosho_sjv::{SJConfig, SJMode, SJPlatform};
+use airpope_macros::EnumName;
+use airpope_sjv::{SJConfig, SJMode, SJPlatform};
 
 pub const PREFIX: &str = "sjv";
 

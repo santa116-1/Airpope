@@ -2,7 +2,7 @@ use tokio::time::{sleep, Duration};
 
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_musq::{proto::ChapterV2, MUClient};
+use airpope_musq::{proto::ChapterV2, MUClient};
 
 use crate::cli::ExitCode;
 
@@ -49,7 +49,7 @@ pub(crate) async fn musq_purchase(
                 user_point.paid -= consume.get_paid();
                 user_point.event -= consume.get_event();
                 let img_chapter = client
-                    .get_chapter_images(chapter.id, tosho_musq::ImageQuality::High, Some(consume))
+                    .get_chapter_images(chapter.id, airpope_musq::ImageQuality::High, Some(consume))
                     .await
                     .unwrap();
                 if img_chapter.blocks.is_empty() {

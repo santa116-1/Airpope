@@ -1,6 +1,6 @@
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_amap::AMClient;
+use airpope_amap::AMClient;
 
 use crate::{
     cli::ExitCode,

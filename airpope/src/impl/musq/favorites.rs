@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_musq::MUClient;
+use airpope_musq::MUClient;
 
 use crate::cli::ExitCode;
 

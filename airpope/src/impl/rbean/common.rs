@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_rbean::{constants::BASE_HOST, models::MangaNode, RBClient};
+use airpope_rbean::{constants::BASE_HOST, models::MangaNode, RBClient};
 
 use crate::{config::save_config, linkify, term::get_console};
 

@@ -1,6 +1,6 @@
 //! A module containing information related to chapters.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use std::collections::HashMap;
 
@@ -84,7 +84,7 @@ impl Chapter {
     /// Get a formatted chapter number with the title.
     ///
     /// ```rust
-    /// use tosho_rbean::models::Chapter;
+    /// use airpope_rbean::models::Chapter;
     ///
     /// let mut chapter = Chapter {
     ///     uuid: "uuid".to_string(),

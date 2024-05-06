@@ -1,5 +1,5 @@
 [package]
-name = "tosho-sjv"
+name = "airpope-sjv"
 version = "0.3.5"
 edition.workspace = true
 authors.workspace = true
@@ -30,4 +30,4 @@ image.workspace = true
 rand.workspace = true
 kamadak-exif = "0.5.5"
 
-tosho-macros = { path = "../tosho_macros", version = "0.3" }
+airpope-macros = { path = "../airpope_macros", version = "0.3" }

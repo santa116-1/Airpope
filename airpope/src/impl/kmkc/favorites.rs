@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_kmkc::KMClient;
+use airpope_kmkc::KMClient;
 
 use super::{common::do_print_search_information, config::Config};
 use crate::cli::ExitCode;
@@ -23,7 +23,7 @@ pub(crate) async fn kmkc_my_favorites(
                 return 0;
             }
 
-            let mapped_favorites: Vec<tosho_kmkc::models::TitleNode> = results
+            let mapped_favorites: Vec<airpope_kmkc::models::TitleNode> = results
                 .favorites
                 .iter()
                 .filter_map(|favorite| {

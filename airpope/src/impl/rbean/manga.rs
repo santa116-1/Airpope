@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 use clap::ValueEnum;
 use color_print::cformat;
-use tosho_rbean::{
+use airpope_rbean::{
     constants::BASE_HOST,
     models::{Separator, SortOption},
     RBClient,
@@ -147,7 +147,7 @@ pub(crate) async fn rbean_title_info(
     let result = result.unwrap();
 
     save_session_config(client, account);
-    let mut chapter_meta: Option<tosho_rbean::models::ChapterListResponse> = None;
+    let mut chapter_meta: Option<airpope_rbean::models::ChapterListResponse> = None;
 
     if show_chapters {
         console.info(&cformat!(

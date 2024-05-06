@@ -1,7 +1,7 @@
 use std::path::{Path, PathBuf};
 
 use color_print::cformat;
-use tosho_amap::{
+use airpope_amap::{
     helper::ComicPurchase,
     models::{ComicEpisodeInfo, ComicInfo},
     AMClient,

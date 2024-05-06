@@ -2,7 +2,7 @@ use std::path::{Path, PathBuf};
 use std::sync::Arc;
 
 use color_print::cformat;
-use tosho_sjv::{
+use airpope_sjv::{
     models::{AccountSubscription, MangaChapterDetail, MangaDetail, SubscriptionType},
     SJClient, SJPlatform,
 };

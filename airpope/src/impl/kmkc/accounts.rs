@@ -3,8 +3,8 @@ use std::path::PathBuf;
 use clap::ValueEnum;
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
-use tosho_macros::EnumName;
+use airpope_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
+use airpope_macros::EnumName;
 
 use crate::{
     cli::ExitCode,
@@ -356,8 +356,8 @@ pub async fn kmkc_account_login_adapt(
                         hash_key: user_info.hash_key,
                         platform: platform.try_into().unwrap(),
                     };
-                    let into_tosho: ConfigMobile = mobile_config.into();
-                    let final_config = into_tosho.with_user_account(&account);
+                    let into_airpope: ConfigMobile = mobile_config.into();
+                    let final_config = into_airpope.with_user_account(&account);
 
                     console.info(&cformat!(
                         "Created session ID <m,s>{}</>, saving config...",

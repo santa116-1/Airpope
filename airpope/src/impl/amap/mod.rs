@@ -14,7 +14,7 @@ pub(crate) mod rankings;
 
 #[derive(Subcommand, Clone)]
 pub(crate) enum AMAPCommands {
-    /// Authenticate tosho with your AM account.
+    /// Authenticate airpope with your AM account.
     Auth {
         /// Email to use
         email: String,

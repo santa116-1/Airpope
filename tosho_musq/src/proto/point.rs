@@ -1,6 +1,6 @@
 //! A module containing information related to point acquisition and usage.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 #![allow(clippy::derive_partial_eq_without_eq)]
 
@@ -27,7 +27,7 @@ impl UserPoint {
     ///
     /// # Examples
     /// ```
-    /// use tosho_musq::proto::UserPoint;
+    /// use airpope_musq::proto::UserPoint;
     ///
     /// let points = UserPoint {
     ///    free: 100,
@@ -102,7 +102,7 @@ impl Billing {
     ///
     /// # Example
     /// ```
-    /// use tosho_musq::proto::Billing;
+    /// use airpope_musq::proto::Billing;
     ///
     /// let billing = Billing {
     ///    id: "id".to_string(),

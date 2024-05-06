@@ -1,5 +1,5 @@
 [package]
-name = "tosho-musq"
+name = "airpope-musq"
 version = "0.3.4"
 edition.workspace = true
 authors.workspace = true
@@ -27,4 +27,4 @@ chrono.workspace = true
 reqwest.workspace = true
 futures-util.workspace = true
 
-tosho-macros = { path = "../tosho_macros", version = "0.3" }
+airpope-macros = { path = "../airpope_macros", version = "0.3" }

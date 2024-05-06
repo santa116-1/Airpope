@@ -1,5 +1,5 @@
 name: ✨ Source request
-description: New source request for tosho.
+description: New source request for airpope.
 labels: [x-triage, c-source]
 
 body:
@@ -35,7 +35,7 @@ body:
           required: true
         - label: I have written a short but informative title.
           required: true
-        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/tosho-mango/releases)**.
+        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/airpope-mango/releases)**.
           required: true
         - label: This is not a feature request rather request for a new source to be added.
           required: true

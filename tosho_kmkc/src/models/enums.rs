@@ -1,12 +1,12 @@
 //! A module containing information related to enums used in the library.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 //!
 //! Especially for [`MagazineCategory`] enum as it needs to be manually documented/updated.
 
 use documented::DocumentedFields;
 use serde::{Deserialize, Serialize};
-use tosho_macros::{
+use airpope_macros::{
     DeserializeEnum32, DeserializeEnum32Fallback, EnumCount, EnumName, EnumU32Fallback,
     SerializeEnum32,
 };
@@ -242,7 +242,7 @@ impl MagazineCategory {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::MagazineCategory;
+    /// use airpope_kmkc::models::MagazineCategory;
     ///
     /// let e_young = MagazineCategory::eYoungMagazine;
     ///

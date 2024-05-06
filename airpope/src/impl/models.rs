@@ -1,11 +1,11 @@
 use std::str::FromStr;
 
 use serde::{Deserialize, Serialize};
-use tosho_amap::models::{ComicEpisodeInfo, ComicEpisodeInfoNode};
-use tosho_kmkc::models::EpisodeNode;
-use tosho_musq::proto::ChapterV2;
-use tosho_rbean::models::Chapter;
-use tosho_sjv::models::MangaChapterDetail;
+use airpope_amap::models::{ComicEpisodeInfo, ComicEpisodeInfoNode};
+use airpope_kmkc::models::EpisodeNode;
+use airpope_musq::proto::ChapterV2;
+use airpope_rbean::models::Chapter;
+use airpope_sjv::models::MangaChapterDetail;
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
 #[serde(untagged)]
@@ -95,7 +95,7 @@ impl MangaDetailDump {
 }
 
 impl From<ChapterV2> for ChapterDetailDump {
-    /// Convert from [`tosho_musq::proto::ChapterV2`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_musq::proto::ChapterV2`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: ChapterV2) -> Self {
         let pub_at = match value.published_at {
@@ -125,7 +125,7 @@ impl From<ChapterV2> for ChapterDetailDump {
 }
 
 impl From<EpisodeNode> for ChapterDetailDump {
-    /// Convert from [`tosho_kmkc::models::EpisodeNode`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_kmkc::models::EpisodeNode`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: EpisodeNode) -> Self {
         let start_time_ts = value.start_time.timestamp();
@@ -140,7 +140,7 @@ impl From<EpisodeNode> for ChapterDetailDump {
 }
 
 impl From<ComicEpisodeInfoNode> for ChapterDetailDump {
-    /// Convert from [`tosho_amap::models::ComicEpisodeInfoNode`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_amap::models::ComicEpisodeInfoNode`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: ComicEpisodeInfoNode) -> Self {
         Self {
@@ -153,7 +153,7 @@ impl From<ComicEpisodeInfoNode> for ChapterDetailDump {
 }
 
 impl From<ComicEpisodeInfo> for ChapterDetailDump {
-    /// Convert from [`tosho_amap::models::ComicEpisodeInfo`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_amap::models::ComicEpisodeInfo`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: ComicEpisodeInfo) -> Self {
         Self::from(value.info)
@@ -161,7 +161,7 @@ impl From<ComicEpisodeInfo> for ChapterDetailDump {
 }
 
 impl From<MangaChapterDetail> for ChapterDetailDump {
-    /// Convert from [`tosho_sjv::models::MangaChapterDetail`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_sjv::models::MangaChapterDetail`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: MangaChapterDetail) -> Self {
         Self {
@@ -174,7 +174,7 @@ impl From<MangaChapterDetail> for ChapterDetailDump {
 }
 
 impl From<Chapter> for ChapterDetailDump {
-    /// Convert from [`tosho_rbean::models::Chapter`] into [`ChapterDetailDump`]
+    /// Convert from [`airpope_rbean::models::Chapter`] into [`ChapterDetailDump`]
     /// `_info.json` format.
     fn from(value: Chapter) -> Self {
         Self {

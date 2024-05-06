@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_kmkc::{
+use airpope_kmkc::{
     constants::BASE_HOST,
     models::{GenreNode, MagazineCategory},
     KMClient,
@@ -230,7 +230,7 @@ pub(crate) async fn kmkc_title_info(
 
                     let mut text_info = cformat!("    <s>{}</> ({})", ep_linked, chapter.id);
                     match chapter.badge {
-                        tosho_kmkc::models::EpisodeBadge::Purchaseable => {
+                        airpope_kmkc::models::EpisodeBadge::Purchaseable => {
                             if chapter.ticket_rental.into() {
                                 let ticket_emote = if console.is_modern() {
                                     "🎫"
@@ -251,13 +251,13 @@ pub(crate) async fn kmkc_title_info(
                                 );
                             }
                         }
-                        tosho_kmkc::models::EpisodeBadge::Free => {
+                        airpope_kmkc::models::EpisodeBadge::Free => {
                             text_info = cformat!("{} [<p(18),bold,reverse>FREE</>]", text_info);
                         }
-                        tosho_kmkc::models::EpisodeBadge::Purchased => {
+                        airpope_kmkc::models::EpisodeBadge::Purchased => {
                             text_info = cformat!("{} [<green,bold>Purchased</>]", text_info);
                         }
-                        tosho_kmkc::models::EpisodeBadge::Rental => {
+                        airpope_kmkc::models::EpisodeBadge::Rental => {
                             if let Some(rental_time) = chapter.rental_rest_time {
                                 text_info = cformat!(
                                     "{} [<yellow,bold>Renting: {}</>]",

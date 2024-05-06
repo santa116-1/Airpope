@@ -1,6 +1,6 @@
 use clap::ValueEnum;
 use color_print::cformat;
-use tosho_kmkc::{
+use airpope_kmkc::{
     constants::{RankingTab, RANKING_TABS},
     KMClient,
 };

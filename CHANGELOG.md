@@ -49,7 +49,7 @@ Starting from Rust port of the project, all changes will be put into this file.
 - `SJ/M`: Show latest available chapter properly
 
 ### Build
-- Pin source crate dependency on `tosho`
+- Pin source crate dependency on `airpope`
 
 ### Docs
 - Add disclaimer
@@ -62,12 +62,12 @@ Starting from Rust port of the project, all changes will be put into this file.
 ### New Features
 - Added **`小豆 (Red Bean)`** as a new source
 - Introduce threaded/parallel image download (not chapter) for the following source:
-  - [KM by KC](https://crates.io/crates/tosho-kmkc)
-  - [SJ/M by V](https://crates.io/crates/tosho-sjv)
-  - [小豆 (Red Bean) by KRKR](https://crates.io/crates/tosho-rbean)
+  - [KM by KC](https://crates.io/crates/airpope-kmkc)
+  - [SJ/M by V](https://crates.io/crates/airpope-sjv)
+  - [小豆 (Red Bean) by KRKR](https://crates.io/crates/airpope-rbean)
 
 By default, the download is sequential. If you want to enable parallel download pass `--parallel` into the
-argument list: `tosho km download 10007 --parallel`
+argument list: `airpope km download 10007 --parallel`
 
 ### Changes
 - `MU`: Refactor API response parsing
@@ -86,21 +86,21 @@ argument list: `tosho km download 10007 --parallel`
 - `SJ`: Make `DATA_VERSION_CODE` optional when sending requests
 - `MU`: Use `&static Constants` for `MUClient::new()` params (**BREAKING CHANGES**)
 - `Macros`: Add docs for `enum_error!()` macro
-- Make `linkify` from `tosho` crates to be crate-only (a.k.a hide it)
+- Make `linkify` from `airpope` crates to be crate-only (a.k.a hide it)
 
 ### Docs
-- Add proper documentation for `tosho-macros`
-- Add proper documentation for `tosho-musq`
-- Add proper documentation for `tosho-kmkc`
-- Add proper documentation for `tosho-amap`
-- Add proper documentation for `tosho-sjv`
+- Add proper documentation for `airpope-macros`
+- Add proper documentation for `airpope-musq`
+- Add proper documentation for `airpope-kmkc`
+- Add proper documentation for `airpope-amap`
+- Add proper documentation for `airpope-sjv`
 
 ### Build
 - Make all source crate to not follow workspace version.
 
 ## [0.3.1] 2024-02-16
 ### New features
-- Added self updater, you can now do `tosho update` to update tosho for supported platform/architecture.
+- Added self updater, you can now do `airpope update` to update airpope for supported platform/architecture.
 
 ### Changes
 - `SJ`: Fix broken serde on renew field at account subcriptions
@@ -112,7 +112,7 @@ argument list: `tosho km download 10007 --parallel`
 ### Build
 - Pin `windows-sys` dependencies (If you use crates.io, this is already pinned in `0.3.0`)
 - Remove `mime` as direct dependency
-- Make `tosho-macros` to not follow workspace versioning.
+- Make `airpope-macros` to not follow workspace versioning.
 
 ## [0.3.0] 2024-02-14
 ### New Features
@@ -131,10 +131,10 @@ argument list: `tosho km download 10007 --parallel`
 ## [0.2.3] 2024-02-07
 ### New Features
 - Proxy support (`--proxy` can be used globally)
-  - Example: `tosho --proxy https://proxy.example km download 10007`
+  - Example: `airpope --proxy https://proxy.example km download 10007`
 - **BREAKING CHANGE**: Moved `-a` or `--account-id` to each source subcommand instead of each commands:
-  - Before: `tosho km download 10007 -a 123`
-  - After: `tosho km -a 123 download 10007`
+  - Before: `airpope km download 10007 -a 123`
+  - After: `airpope km -a 123 download 10007`
 
 ### Changes
 - `KM`: Fix invalid deserialization on `/account`
@@ -154,7 +154,7 @@ argument list: `tosho km download 10007 --parallel`
 - `AM`: Replace session v2 cookie in each request
 
 ### Docs
-- Add missing documentation for `tosho-amap`
+- Add missing documentation for `airpope-amap`
 
 ### Build
 - Pin and bump dependencies on GitHub CI
@@ -162,10 +162,10 @@ argument list: `tosho km download 10007 --parallel`
 
 ## [0.2.1] 2024-01-22
 ### Build
-- Add proper version hash if `tosho` built as nightly or by yourself.
+- Add proper version hash if `airpope` built as nightly or by yourself.
 
 ### Changes
-- Add missing help description for `tosho tools`
+- Add missing help description for `airpope tools`
 - Make terminal looks more consistent
 - `MU`: Fix rankings selector not working as intended
 - `AM`: Simplify `strptime` to only show `YYYY-MM-DD`
@@ -180,8 +180,8 @@ argument list: `tosho km download 10007 --parallel`
 - Support mobile source (both Android and iOS) for `KM` source.
 
 ### Changed
-- Port everything into Rust, legacy Python can be seen from [legacy-snek](https://github.com/noaione/tosho-mango/tree/legacy-snek) branch.
-- Split every sources into their own Rust crates. (prefixed with `tosho_` in folder or `tosho-` in crates name)
+- Port everything into Rust, legacy Python can be seen from [legacy-snek](https://github.com/noaione/airpope-mango/tree/legacy-snek) branch.
+- Split every sources into their own Rust crates. (prefixed with `airpope_` in folder or `airpope-` in crates name)
 
 ### Incompatibility
 - You would need to re-authenticate your `KM` web session since there is a bit of changes and it might not be compatible anymore.

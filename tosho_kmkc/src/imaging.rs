@@ -6,7 +6,7 @@
 //! [`crate::KMClient::get_episode_viewer`] method.
 //!
 //! ```rust,no_run
-//! use tosho_kmkc::imaging::descramble_image;
+//! use airpope_kmkc::imaging::descramble_image;
 //!
 //! let img_bytes = [0_u8; 100];
 //!
@@ -96,7 +96,7 @@ fn generate_copy_targets(rectbox: u32, seed: u32) -> Vec<((u32, u32), (u32, u32)
 ///
 /// # Example
 /// ```no_run
-/// use tosho_kmkc::imaging::descramble_image;
+/// use airpope_kmkc::imaging::descramble_image;
 ///
 /// let img_bytes = [0_u8; 100];
 ///

@@ -1,7 +1,7 @@
 //! Provides a collection of helper Structs that can be used.
 //!
 //! ```rust
-//! use tosho_musq::{WeeklyCode, ImageQuality, ConsumeCoin};
+//! use airpope_musq::{WeeklyCode, ImageQuality, ConsumeCoin};
 //!
 //! let today = WeeklyCode::today();
 //! let hq_img = ImageQuality::High;
@@ -21,20 +21,20 @@ use serde::{Deserialize, Serialize};
 ///
 /// # Example
 /// ```no_run
-/// use tosho_musq::{constants::get_constants, MUClient};
+/// use airpope_musq::{constants::get_constants, MUClient};
 ///
 /// let client = MUClient::new("123456", get_constants(1));
 ///
-/// let weekly_titles = client.get_weekly_titles(tosho_musq::WeeklyCode::today());
+/// let weekly_titles = client.get_weekly_titles(airpope_musq::WeeklyCode::today());
 /// ```
 #[derive(
     Debug,
     Clone,
     Copy,
     PartialEq,
-    tosho_macros::SerializeEnum,
-    tosho_macros::DeserializeEnum,
-    tosho_macros::EnumName,
+    airpope_macros::SerializeEnum,
+    airpope_macros::DeserializeEnum,
+    airpope_macros::EnumName,
 )]
 pub enum WeeklyCode {
     /// Monday
@@ -53,7 +53,7 @@ pub enum WeeklyCode {
     Sunday,
 }
 
-tosho_macros::enum_error!(WeeklyCodeFromStrError);
+airpope_macros::enum_error!(WeeklyCodeFromStrError);
 
 impl FromStr for WeeklyCode {
     type Err = WeeklyCodeFromStrError;
@@ -94,7 +94,7 @@ impl WeeklyCode {
     ///
     /// # Example
     /// ```
-    /// use tosho_musq::helper::WeeklyCode;
+    /// use airpope_musq::helper::WeeklyCode;
     ///
     /// let today = WeeklyCode::today();
     /// ```
@@ -116,7 +116,7 @@ impl WeeklyCode {
     ///
     /// # Example
     /// ```
-    /// use tosho_musq::helper::WeeklyCode;
+    /// use airpope_musq::helper::WeeklyCode;
     ///
     /// let monday = WeeklyCode::Monday;
     /// assert_eq!(monday.get_index(), 0);
@@ -140,14 +140,14 @@ impl WeeklyCode {
 ///
 /// # Example
 /// ```no_run
-/// use tosho_musq::{constants::get_constants, MUClient, ImageQuality};
+/// use airpope_musq::{constants::get_constants, MUClient, ImageQuality};
 ///
 /// let client = MUClient::new("123456", get_constants(1));
 ///
 /// let chapter_images = client.get_chapter_images(12345, ImageQuality::Normal, None);
 /// ```
 #[derive(
-    Debug, Clone, Copy, PartialEq, tosho_macros::SerializeEnum, tosho_macros::DeserializeEnum,
+    Debug, Clone, Copy, PartialEq, airpope_macros::SerializeEnum, airpope_macros::DeserializeEnum,
 )]
 pub enum ImageQuality {
     /// Normal quality images
@@ -185,7 +185,7 @@ impl ToString for ImageQuality {
 ///
 /// # Example
 /// ```
-/// use tosho_musq::ConsumeCoin;
+/// use airpope_musq::ConsumeCoin;
 ///
 /// let coins = ConsumeCoin::new(1, 2, 3, 4);
 /// assert_eq!(coins.is_possible(), true);
@@ -216,7 +216,7 @@ impl ConsumeCoin {
     ///
     /// # Example
     /// ```
-    /// use tosho_musq::ConsumeCoin;
+    /// use airpope_musq::ConsumeCoin;
     ///
     /// let coins = ConsumeCoin::new(1, 2, 3, 4);
     /// assert_eq!(coins.is_possible(), true);
@@ -232,7 +232,7 @@ impl ConsumeCoin {
     ///
     /// # Example
     /// ```
-    /// use tosho_musq::ConsumeCoin;
+    /// use airpope_musq::ConsumeCoin;
     ///
     /// let coins = ConsumeCoin::new(1, 2, 3, 4);
     /// assert_eq!(coins.is_free(), false);

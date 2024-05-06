@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_musq::{
+use airpope_musq::{
     constants::BASE_HOST,
     proto::{ConsumptionType, Tag},
     MUClient, WeeklyCode,

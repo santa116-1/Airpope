@@ -2,7 +2,7 @@ use tokio::time::{sleep, Duration};
 
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_amap::{helper::ComicPurchase, models::ComicEpisodeInfoNode, AMClient};
+use airpope_amap::{helper::ComicPurchase, models::ComicEpisodeInfoNode, AMClient};
 
 use crate::cli::ExitCode;
 

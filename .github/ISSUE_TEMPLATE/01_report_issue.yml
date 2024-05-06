@@ -1,5 +1,5 @@
 name: 🐞 Issue report
-description: Report an issue with tosho.
+description: Report an issue with airpope.
 labels: [x-triage]
 
 body:
@@ -53,11 +53,11 @@ body:
       required: true
 
   - type: input
-    id: tosho-version
+    id: airpope-version
     attributes:
-      label: tosho version
+      label: airpope version
       description: |
-        You can find your `tosho` version with `tosho -V` in a terminal.
+        You can find your `airpope` version with `airpope -V` in a terminal.
       placeholder: |
         Example: "0.4.3"
     validations:
@@ -79,7 +79,7 @@ body:
     attributes:
       label: Obtained from
       description: |
-        Where did you obtain/download tosho from?
+        Where did you obtain/download airpope from?
       multiple: false
       options:
         - GitHub Releases ("Stable")
@@ -106,7 +106,7 @@ body:
           required: true
         - label: I have written a short but informative title.
           required: true
-        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/tosho-mango/releases)**.
+        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/airpope-mango/releases)**.
           required: true
         - label: I will fill out all of the requested information in this form.
           required: true

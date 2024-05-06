@@ -1,6 +1,6 @@
 //! A module containing common models used in the library.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use serde::{Deserialize, Serialize};
 
@@ -49,7 +49,7 @@ impl StatusResult {
     ///
     /// # Examples
     /// ```
-    /// use tosho_amap::models::{ResultHeader, StatusResult};
+    /// use airpope_amap::models::{ResultHeader, StatusResult};
     ///
     /// let response = StatusResult {
     ///     header: ResultHeader {

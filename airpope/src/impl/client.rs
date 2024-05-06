@@ -94,28 +94,28 @@ pub(crate) fn select_single_account(
     }
 }
 
-pub(crate) fn make_musq_client(config: &super::musq::config::Config) -> tosho_musq::MUClient {
-    let constants = tosho_musq::constants::get_constants(config.r#type() as u8);
+pub(crate) fn make_musq_client(config: &super::musq::config::Config) -> airpope_musq::MUClient {
+    let constants = airpope_musq::constants::get_constants(config.r#type() as u8);
 
-    tosho_musq::MUClient::new(&config.session, constants)
+    airpope_musq::MUClient::new(&config.session, constants)
 }
 
-pub(crate) fn make_kmkc_client(config: &tosho_kmkc::KMConfig) -> tosho_kmkc::KMClient {
-    tosho_kmkc::KMClient::new(config.clone())
+pub(crate) fn make_kmkc_client(config: &airpope_kmkc::KMConfig) -> airpope_kmkc::KMClient {
+    airpope_kmkc::KMClient::new(config.clone())
 }
 
-pub(crate) fn make_amap_client(config: &tosho_amap::AMConfig) -> tosho_amap::AMClient {
-    tosho_amap::AMClient::new(config.clone())
+pub(crate) fn make_amap_client(config: &airpope_amap::AMConfig) -> airpope_amap::AMClient {
+    airpope_amap::AMClient::new(config.clone())
 }
 
-pub(crate) fn make_sjv_client(config: &super::sjv::config::Config) -> tosho_sjv::SJClient {
+pub(crate) fn make_sjv_client(config: &super::sjv::config::Config) -> airpope_sjv::SJClient {
     let mode = match config.mode() {
-        crate::r#impl::sjv::config::SJDeviceMode::SJ => tosho_sjv::SJMode::SJ,
-        crate::r#impl::sjv::config::SJDeviceMode::VM => tosho_sjv::SJMode::VM,
+        crate::r#impl::sjv::config::SJDeviceMode::SJ => airpope_sjv::SJMode::SJ,
+        crate::r#impl::sjv::config::SJDeviceMode::VM => airpope_sjv::SJMode::VM,
     };
-    tosho_sjv::SJClient::new(config.clone().into(), mode)
+    airpope_sjv::SJClient::new(config.clone().into(), mode)
 }
 
-pub(crate) fn make_rbean_client(config: &super::rbean::config::Config) -> tosho_rbean::RBClient {
-    tosho_rbean::RBClient::new(config.clone().into())
+pub(crate) fn make_rbean_client(config: &super::rbean::config::Config) -> airpope_rbean::RBClient {
+    airpope_rbean::RBClient::new(config.clone().into())
 }

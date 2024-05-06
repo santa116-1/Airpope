@@ -1,5 +1,5 @@
 [package]
-name = "tosho-rbean"
+name = "airpope-rbean"
 version = "0.1.3"
 edition.workspace = true
 authors.workspace = true
@@ -23,4 +23,4 @@ anyhow.workspace = true
 base64.workspace = true
 chrono.workspace = true
 
-tosho-macros = { path = "../tosho_macros", version = "0.3" }
+airpope-macros = { path = "../airpope_macros", version = "0.3" }

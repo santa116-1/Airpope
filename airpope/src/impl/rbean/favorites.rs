@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_rbean::{constants::BASE_HOST, RBClient};
+use airpope_rbean::{constants::BASE_HOST, RBClient};
 
 use crate::{cli::ExitCode, linkify};
 

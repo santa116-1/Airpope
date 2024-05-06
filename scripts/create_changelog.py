@@ -6,18 +6,18 @@ ROOT_DIR = Path(__file__).parent.parent.absolute()
 CHANGELOG_FILE = ROOT_DIR / "CHANGELOG.md"
 INNER_DESC = """The following release notes are automatically generated.
 
-For the complete changelog, visit [here](https://github.com/noaione/tosho-mango/blob/master/CHANGELOG.md).
-If you encounter any problems, please report them on the [issues](https://github.com/noaione/tosho-mango/issues/new/choose) page.
+For the complete changelog, visit [here](https://github.com/noaione/airpope-mango/blob/master/CHANGELOG.md).
+If you encounter any problems, please report them on the [issues](https://github.com/noaione/airpope-mango/issues/new/choose) page.
 
 ### Updating
 
-Since [v0.3.1](https://github.com/noaione/tosho-mango/releases/tag/v0.3.1), you can update `tosho` using the following command:
+Since [v0.3.1](https://github.com/noaione/airpope-mango/releases/tag/v0.3.1), you can update `airpope` using the following command:
 
 ```bash
-tosho update
+airpope update
 ```
 
-Which will automatically download the latest version of `tosho` and replace the old one.
+Which will automatically download the latest version of `airpope` and replace the old one.
 
 ## Changelog
 """  # noqa: E501

@@ -14,7 +14,7 @@ pub(crate) mod rankings;
 
 #[derive(Subcommand, Clone)]
 pub(crate) enum RBeanCommands {
-    /// Authenticate tosho with your 小豆 (Red Bean) account.
+    /// Authenticate airpope with your 小豆 (Red Bean) account.
     Auth {
         /// Email to use
         email: String,

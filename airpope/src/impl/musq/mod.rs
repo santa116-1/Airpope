@@ -15,7 +15,7 @@ pub(crate) mod rankings;
 
 #[derive(Subcommand, Clone)]
 pub(crate) enum MUSQCommands {
-    /// Authenticate tosho with your MU! account
+    /// Authenticate airpope with your MU! account
     Auth {
         /// Session ID
         session_id: String,

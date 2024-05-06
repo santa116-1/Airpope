@@ -2,8 +2,8 @@ use std::path::{Path, PathBuf};
 use std::sync::Arc;
 
 use color_print::cformat;
-use tosho_kmkc::models::ImagePageNode;
-use tosho_kmkc::{
+use airpope_kmkc::models::ImagePageNode;
+use airpope_kmkc::{
     models::{EpisodeNode, EpisodeViewerResponse, TicketInfoType, TitleNode},
     KMClient,
 };
@@ -388,13 +388,13 @@ pub(crate) async fn kmkc_download(
 
                 // create dir
                 std::fs::create_dir_all(&image_dir).unwrap();
-                let image_blocks: Vec<tosho_kmkc::models::ImagePageNode> = match &viewer_info {
+                let image_blocks: Vec<airpope_kmkc::models::ImagePageNode> = match &viewer_info {
                     EpisodeViewerResponse::Mobile(mobile) => mobile.pages.clone(),
                     EpisodeViewerResponse::Web(web) => {
                         web.pages
                             .iter()
                             .map(|p| p.clone().into())
-                            .collect::<Vec<tosho_kmkc::models::ImagePageNode>>()
+                            .collect::<Vec<airpope_kmkc::models::ImagePageNode>>()
                     }
                 };
                 let scramble_seed = match &viewer_info {

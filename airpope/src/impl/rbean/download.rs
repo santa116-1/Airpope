@@ -5,8 +5,8 @@ use std::{
 
 use clap::ValueEnum;
 use color_print::cformat;
-use tosho_macros::EnumName;
-use tosho_rbean::{
+use airpope_macros::EnumName;
+use airpope_rbean::{
     models::{Chapter, ChapterPage, Manga, UserAccount},
     RBClient,
 };

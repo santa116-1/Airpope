@@ -1,17 +1,17 @@
-//! # tosho-rbean
+//! # airpope-rbean
 //!
-//! ![crates.io version](https://img.shields.io/crates/v/tosho-rbean)
+//! ![crates.io version](https://img.shields.io/crates/v/airpope-rbean)
 //!
 //! A minimal asynchronous client for 小豆 (Red Bean) API.
 //!
-//! The following crate is used by the [`tosho`] app.
+//! The following crate is used by the [`airpope`] app.
 //!
 //! ## Usage
 //!
-//! Download the [`tosho`] app, or you can utilize this crate like any other Rust crate:
+//! Download the [`airpope`] app, or you can utilize this crate like any other Rust crate:
 //!
 //! ```rust,no_run
-//! use tosho_rbean::{RBClient, RBConfig, RBPlatform};
+//! use airpope_rbean::{RBClient, RBConfig, RBPlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -33,13 +33,13 @@
 //! The following sources only have one method of authentication, and that method uses your email and password.
 //!
 //! ```bash
-//! $ tosho rb auth email password --help
+//! $ airpope rb auth email password --help
 //! ```
 //!
 //! Or, if you use the crates:
 //!
 //! ```rust,no_run
-//! use tosho_rbean::{RBClient, RBPlatform};
+//! use airpope_rbean::{RBClient, RBPlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -58,9 +58,9 @@
 //!
 //! ## License
 //!
-//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
+//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
 //!
-//! [`tosho`]: https://crates.io/crates/tosho
+//! [`airpope`]: https://crates.io/crates/airpope
 
 use std::collections::HashMap;
 use tokio::io::{self, AsyncWriteExt};
@@ -84,7 +84,7 @@ const PATTERN: [u8; 1] = [174];
 ///
 /// # Examples
 /// ```no_run
-/// use tosho_rbean::{RBClient, RBConfig, RBPlatform};
+/// use airpope_rbean::{RBClient, RBConfig, RBPlatform};
 ///
 /// #[tokio::main]
 /// async fn main() {

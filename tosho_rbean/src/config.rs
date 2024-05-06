@@ -1,7 +1,7 @@
 //! Provides the configuration Struct for the client.
 //!
 //! ```rust
-//! use tosho_rbean::{RBConfig, RBPlatform};
+//! use airpope_rbean::{RBConfig, RBPlatform};
 //!
 //! let config = RBConfig {
 //!     token: "123".to_string(),
@@ -15,7 +15,7 @@ use crate::models::accounts::google::{IdentityToolkitVerifyPasswordResponse, Sec
 /// Represents the platform for the client.
 ///
 /// ```
-/// use tosho_rbean::RBPlatform;
+/// use airpope_rbean::RBPlatform;
 ///
 /// let platform = RBPlatform::Android;
 /// ```

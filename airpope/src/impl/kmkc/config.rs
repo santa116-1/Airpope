@@ -1,7 +1,7 @@
 #![allow(clippy::derive_partial_eq_without_eq)]
 
-use tosho_kmkc::{KMConfig, KMConfigMobilePlatform};
-use tosho_macros::EnumName;
+use airpope_kmkc::{KMConfig, KMConfigMobilePlatform};
+use airpope_macros::EnumName;
 
 pub const PREFIX: &str = "kmkc";
 
@@ -88,9 +88,9 @@ pub struct ConfigMobile {
     pub platform: ::core::option::Option<i32>,
 }
 
-impl From<ConfigMobile> for tosho_kmkc::KMConfigMobile {
+impl From<ConfigMobile> for airpope_kmkc::KMConfigMobile {
     fn from(value: ConfigMobile) -> Self {
-        tosho_kmkc::config::KMConfigMobile {
+        airpope_kmkc::config::KMConfigMobile {
             user_id: value.user_id.clone(),
             hash_key: value.user_secret.clone(),
             platform: value.platform().into(),
@@ -98,12 +98,12 @@ impl From<ConfigMobile> for tosho_kmkc::KMConfigMobile {
     }
 }
 
-impl From<tosho_kmkc::KMConfigMobile> for ConfigMobile {
-    fn from(value: tosho_kmkc::KMConfigMobile) -> Self {
+impl From<airpope_kmkc::KMConfigMobile> for ConfigMobile {
+    fn from(value: airpope_kmkc::KMConfigMobile) -> Self {
         let id = uuid::Uuid::new_v4().to_string();
         let platform_id = match value.platform {
-            tosho_kmkc::config::KMConfigMobilePlatform::Android => MobilePlatform::Android,
-            tosho_kmkc::config::KMConfigMobilePlatform::Apple => MobilePlatform::Apple,
+            airpope_kmkc::config::KMConfigMobilePlatform::Android => MobilePlatform::Android,
+            airpope_kmkc::config::KMConfigMobilePlatform::Apple => MobilePlatform::Apple,
         };
         ConfigMobile {
             id,
@@ -132,8 +132,8 @@ pub struct ConfigWebKeyValue {
     pub expires: u64,
 }
 
-impl From<tosho_kmkc::config::KMConfigWebKV> for ConfigWebKeyValue {
-    fn from(value: tosho_kmkc::config::KMConfigWebKV) -> Self {
+impl From<airpope_kmkc::config::KMConfigWebKV> for ConfigWebKeyValue {
+    fn from(value: airpope_kmkc::config::KMConfigWebKV) -> Self {
         ConfigWebKeyValue {
             value: value.value.clone(),
             expires: value.expires.try_into().unwrap_or(0),
@@ -141,9 +141,9 @@ impl From<tosho_kmkc::config::KMConfigWebKV> for ConfigWebKeyValue {
     }
 }
 
-impl From<ConfigWebKeyValue> for tosho_kmkc::KMConfigWebKV {
+impl From<ConfigWebKeyValue> for airpope_kmkc::KMConfigWebKV {
     fn from(value: ConfigWebKeyValue) -> Self {
-        tosho_kmkc::KMConfigWebKV {
+        airpope_kmkc::KMConfigWebKV {
             value: value.value.clone(),
             expires: value.expires.try_into().unwrap_or(0),
         }
@@ -185,9 +185,9 @@ pub struct ConfigWeb {
     pub privacy: ::core::option::Option<ConfigWebKeyValue>,
 }
 
-impl From<ConfigWeb> for tosho_kmkc::KMConfigWeb {
+impl From<ConfigWeb> for airpope_kmkc::KMConfigWeb {
     fn from(value: ConfigWeb) -> Self {
-        tosho_kmkc::KMConfigWeb {
+        airpope_kmkc::KMConfigWeb {
             uwt: value.uwt.clone(),
             birthday: value.birthday.clone().unwrap().into(),
             tos_adult: value.tos_adult.clone().unwrap().into(),
@@ -196,8 +196,8 @@ impl From<ConfigWeb> for tosho_kmkc::KMConfigWeb {
     }
 }
 
-impl From<tosho_kmkc::KMConfigWeb> for ConfigWeb {
-    fn from(value: tosho_kmkc::KMConfigWeb) -> Self {
+impl From<airpope_kmkc::KMConfigWeb> for ConfigWeb {
+    fn from(value: airpope_kmkc::KMConfigWeb) -> Self {
         let id = uuid::Uuid::new_v4().to_string();
         ConfigWeb {
             id,
@@ -215,8 +215,8 @@ impl From<tosho_kmkc::KMConfigWeb> for ConfigWeb {
 }
 
 impl ConfigWeb {
-    /// Combine the config with the response from [`tosho_kmkc::models::UserAccount`].
-    pub fn with_user_account(&self, account: &tosho_kmkc::models::UserAccount) -> Self {
+    /// Combine the config with the response from [`airpope_kmkc::models::UserAccount`].
+    pub fn with_user_account(&self, account: &airpope_kmkc::models::UserAccount) -> Self {
         let mut config = self.clone();
 
         config.username = account.name.clone().unwrap_or("Unknown".to_string());
@@ -246,8 +246,8 @@ impl ConfigWeb {
 }
 
 impl ConfigMobile {
-    /// Combine the config with the response from [`tosho_kmkc::models::UserAccount`].
-    pub fn with_user_account(&self, account: &tosho_kmkc::models::UserAccount) -> Self {
+    /// Combine the config with the response from [`airpope_kmkc::models::UserAccount`].
+    pub fn with_user_account(&self, account: &airpope_kmkc::models::UserAccount) -> Self {
         let mut config = self.clone();
 
         config.username = account.name.clone().unwrap_or("Unknown".to_string());

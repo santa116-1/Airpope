@@ -1,17 +1,17 @@
-# tosho-amap
+# airpope-amap
 
-![crates.io version](https://img.shields.io/crates/v/tosho-amap)
+![crates.io version](https://img.shields.io/crates/v/airpope-amap)
 
 A minimal asynchronous client for the AM API by AP.
 
-The following crate is used by the [`tosho`](tosho) app.
+The following crate is used by the [`airpope`](airpope) app.
 
 ## Usage
 
-Download the [`tosho`](tosho) app, or you can utilize this crate like any other Rust crate:
+Download the [`airpope`](airpope) app, or you can utilize this crate like any other Rust crate:
 
 ```rust
-use tosho_amap::{AMClient, AMConfig};
+use airpope_amap::{AMClient, AMConfig};
 
 #[tokio::main]
 async fn main() {
@@ -33,13 +33,13 @@ async fn main() {
 The following sources only have one method of authentication, and that method uses your email and password.
 
 ```bash
-$ tosho am auth email password
+$ airpope am auth email password
 ```
 
 Or, if you use this crates as library:
 
 ```rust
-use tosho_amap::AMClient;
+use airpope_amap::AMClient;
 
 #[tokio::main]
 async fn main() {
@@ -55,6 +55,6 @@ We're not responsible if your account got deactivated.
 
 ## License
 
-This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or http://opensource.org/licenses/MIT)
+This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or http://opensource.org/licenses/MIT)
 
-[tosho]: https://crates.io/crates/tosho
+[airpope]: https://crates.io/crates/airpope

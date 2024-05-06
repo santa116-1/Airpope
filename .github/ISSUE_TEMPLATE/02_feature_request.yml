@@ -1,5 +1,5 @@
 name: 🚀 Feature request
-description: Feature request for tosho.
+description: Feature request for airpope.
 labels: [x-triage, c-core]
 
 body:
@@ -7,7 +7,7 @@ body:
     id: feature-description
     attributes:
       label: Describe your suggested feature
-      description: How can tosho be improved?
+      description: How can airpope be improved?
       placeholder: |
         Example:
           "It should work like this..."
@@ -31,7 +31,7 @@ body:
           required: true
         - label: I have written a short but informative title.
           required: true
-        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/tosho-mango/releases)**.
+        - label: I have updated the app to version **[0.4.3](https://github.com/noaione/airpope-mango/releases)**.
           required: true
         - label: This is not a source request rather request for a new feature in the Core app.
           required: true

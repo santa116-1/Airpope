@@ -1,6 +1,6 @@
 //! A module containing information related to enums used in the library.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 /// The status of each request
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord, ::prost::Enumeration)]
@@ -96,7 +96,7 @@ impl SubscriptionKind {
     /// Check if the user is subscribed.
     ///
     /// ```rust
-    /// use tosho_musq::proto::SubscriptionKind;
+    /// use airpope_musq::proto::SubscriptionKind;
     ///
     /// let kind = SubscriptionKind::Monthly;
     /// assert!(kind.is_subscribed());
@@ -148,7 +148,7 @@ impl SubscriptionBadge {
     /// Check if manga has a subscription badge.
     ///
     /// ```rust
-    /// use tosho_musq::proto::SubscriptionBadge;
+    /// use airpope_musq::proto::SubscriptionBadge;
     ///
     /// let badge = SubscriptionBadge::Available;
     /// assert!(badge.has_badge());

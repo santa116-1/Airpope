@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_rbean::{
+use airpope_rbean::{
     constants::BASE_HOST,
     models::{Carousel, MangaNode},
     RBClient,

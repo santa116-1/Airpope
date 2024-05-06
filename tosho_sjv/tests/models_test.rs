@@ -1,7 +1,7 @@
 use std::{fs::File, io::Read, path::PathBuf, str::FromStr};
 
 use base64::{engine::general_purpose, Engine as _};
-use tosho_sjv::models::{
+use airpope_sjv::models::{
     MangaImprint, MangaRating, MangaSeriesResponse, MangaStoreResponse, SubscriptionType,
 };
 
@@ -9,7 +9,7 @@ fn common_reader(file_name: &str) -> Result<String, std::io::Error> {
     let manifest_dir = PathBuf::from_str(env!("CARGO_MANIFEST_DIR")).unwrap();
     let root_dir = manifest_dir.parent().unwrap();
 
-    let assets_dir = root_dir.join("tosho_assets");
+    let assets_dir = root_dir.join("airpope_assets");
 
     if !assets_dir.exists() {
         return Err(std::io::Error::new(
@@ -109,7 +109,7 @@ fn test_store_cached_models() {
             let mut has_829_chapter = false;
             for store_data in store_cached.contents {
                 match &store_data {
-                    tosho_sjv::models::MangaStoreInfo::Chapter(chapter) => {
+                    airpope_sjv::models::MangaStoreInfo::Chapter(chapter) => {
                         assert!(chapter.pages > 0);
 
                         if chapter.series_id == 829 {
@@ -119,7 +119,7 @@ fn test_store_cached_models() {
                             has_829_chapter = true;
                         }
                     }
-                    tosho_sjv::models::MangaStoreInfo::Manga(manga) => {
+                    airpope_sjv::models::MangaStoreInfo::Manga(manga) => {
                         if manga.id == 777 {
                             assert_eq!(manga.title, "Frieren: Beyond Journey’s End");
                             assert_eq!(manga.slug, "frieren-the-journeys-end");

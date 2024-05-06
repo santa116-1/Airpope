@@ -1,6 +1,6 @@
 //! A module containing information about images.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use std::cmp::Ordering;
 
@@ -22,7 +22,7 @@ impl ImageSource {
     ///
     /// # Examples
     /// ```
-    /// use tosho_rbean::models::ImageSource;
+    /// use airpope_rbean::models::ImageSource;
     ///
     /// let page = ImageSource {
     ///     width: 800,
@@ -45,7 +45,7 @@ impl ImageSource {
     ///
     /// # Examples
     /// ```
-    /// use tosho_rbean::models::ImageSource;
+    /// use airpope_rbean::models::ImageSource;
     ///
     /// let page = ImageSource {
     ///     width: 800,
@@ -70,7 +70,7 @@ impl ImageSource {
     ///
     /// # Examples
     /// ```
-    /// use tosho_rbean::models::ImageSource;
+    /// use airpope_rbean::models::ImageSource;
     ///
     /// let page = ImageSource {
     ///     width: 800,

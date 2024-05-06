@@ -1,6 +1,6 @@
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_musq::{
+use airpope_musq::{
     constants::BASE_HOST,
     proto::{BadgeManga, ChapterV2, LabelBadgeManga, MangaDetailV2, MangaResultNode, UserPoint},
     MUClient,

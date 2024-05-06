@@ -1,17 +1,17 @@
-//! # tosho-kmkc
+//! # airpope-kmkc
 //!
-//! ![crates.io version](https://img.shields.io/crates/v/tosho-kmkc)
+//! ![crates.io version](https://img.shields.io/crates/v/airpope-kmkc)
 //!
 //! A minimal asynchronous client for the KM API by KC.
 //!
-//! The following crate is used by the [`tosho`] app.
+//! The following crate is used by the [`airpope`] app.
 //!
 //! ## Usage
 //!
-//! Download the [`tosho`] app, or you can utilize this crate like any other Rust crate:
+//! Download the [`airpope`] app, or you can utilize this crate like any other Rust crate:
 //!
 //! ```rust,no_run
-//! use tosho_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
+//! use airpope_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -39,23 +39,23 @@
 //! For the easiest method, use the `auth` command and then `auth-adapt` to obtain the mobile version.
 //!
 //! ```bash
-//! $ tosho km auth email password -t web
+//! $ airpope km auth email password -t web
 //! ```
 //!
 //! Alternatively, if you only want the mobile version:
 //!
 //! ```bash
-//! $ tosho km auth email password -t android
+//! $ airpope km auth email password -t android
 //! ```
 //!
 //! ```bash
-//! $ tosho km auth email password -t ios
+//! $ airpope km auth email password -t ios
 //! ```
 //!
 //! Or, if you use this crates as library:
 //!
 //! ```rust,no_run
-//! use tosho_kmkc::{KMClient, KMConfigMobilePlatform};
+//! use airpope_kmkc::{KMClient, KMConfigMobilePlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -77,9 +77,9 @@
 //!
 //! ## License
 //!
-//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
+//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
 //!
-//! [`tosho`]: https://crates.io/crates/tosho
+//! [`airpope`]: https://crates.io/crates/airpope
 
 use std::{collections::HashMap, sync::MutexGuard};
 
@@ -118,7 +118,7 @@ pub struct KMLoginResult {
 ///
 /// # Example
 /// ```no_run
-/// use tosho_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
+/// use airpope_kmkc::{KMClient, KMConfig, KMConfigMobile, KMConfigMobilePlatform};
 ///
 /// #[tokio::main]
 /// async fn main() {

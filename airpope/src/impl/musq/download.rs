@@ -3,7 +3,7 @@ use std::path::{Path, PathBuf};
 use clap::ValueEnum;
 
 use color_print::cformat;
-use tosho_musq::{
+use airpope_musq::{
     proto::{ChapterV2, MangaDetailV2},
     ImageQuality, MUClient,
 };
@@ -287,7 +287,7 @@ pub(crate) async fn musq_download(
                 .dump(&title_dump_path)
                 .expect("Failed to dump title info");
 
-            let mut stored_blocks: Vec<tosho_musq::proto::PageBlock> = vec![];
+            let mut stored_blocks: Vec<airpope_musq::proto::PageBlock> = vec![];
             for chapter in download_chapters {
                 console.info(&cformat!(
                     "  Downloading chapter <m,s>{}</> ({})...",
@@ -342,7 +342,7 @@ pub(crate) async fn musq_download(
                     }
                 };
 
-                let image_blocks: Vec<&tosho_musq::proto::ChapterPage> = image_blocks
+                let image_blocks: Vec<&airpope_musq::proto::ChapterPage> = image_blocks
                     .iter()
                     .filter(|&x| {
                         // only allow url with /page/ or /page_high/ in it

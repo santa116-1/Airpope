@@ -1,17 +1,17 @@
-//! # tosho-sjv
+//! # airpope-sjv
 //!
-//! ![crates.io version](https://img.shields.io/crates/v/tosho-sjv)
+//! ![crates.io version](https://img.shields.io/crates/v/airpope-sjv)
 //!
 //! A minimal asynchronous client for the SJ API by V.
 //!
-//! The following crate is used by the [`tosho`] app.
+//! The following crate is used by the [`airpope`] app.
 //!
 //! ## Usage
 //!
-//! Download the [`tosho`] app, or you can utilize this crate like any other Rust crate:
+//! Download the [`airpope`] app, or you can utilize this crate like any other Rust crate:
 //!
 //! ```rust,no_run
-//! use tosho_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
+//! use airpope_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -33,13 +33,13 @@
 //! The following sources only have one method of authentication, and that method uses your email and password.
 //!
 //! ```bash
-//! $ tosho sj auth email password --help
+//! $ airpope sj auth email password --help
 //! ```
 //!
 //! Or, if you use the crates:
 //!
 //! ```rust,no_run
-//! use tosho_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
+//! use airpope_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
 //!
 //! #[tokio::main]
 //! async fn main() {
@@ -62,9 +62,9 @@
 //!
 //! ## License
 //!
-//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/tosho-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
+//! This project is licensed with MIT License ([LICENSE](https://github.com/noaione/airpope-mango/blob/master/LICENSE) or <http://opensource.org/licenses/MIT>)
 //!
-//! [`tosho`]: https://crates.io/crates/tosho
+//! [`airpope`]: https://crates.io/crates/airpope
 
 use constants::{
     API_HOST, BASE_API, DATA_APP_ID, HEADER_PIECE, LIB_VERSION, SJ_APP_ID, VALUE_PIECE, VM_APP_ID,
@@ -91,7 +91,7 @@ pub use config::*;
 ///
 /// # Examples
 /// ```no_run
-/// use tosho_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
+/// use airpope_sjv::{SJClient, SJConfig, SJMode, SJPlatform};
 ///
 /// #[tokio::main]
 /// async fn main() {

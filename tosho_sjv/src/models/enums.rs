@@ -3,7 +3,7 @@
 use std::str::FromStr;
 
 use serde::{Deserialize, Serialize};
-use tosho_macros::{
+use airpope_macros::{
     enum_error, DeserializeEnum, DeserializeEnum32, DeserializeEnum32Fallback, EnumName,
     EnumU32Fallback, SerializeEnum, SerializeEnum32,
 };
@@ -69,7 +69,7 @@ impl From<IntBool> for bool {
 /// The subscription type
 ///
 /// ```
-/// use tosho_sjv::models::SubscriptionType;
+/// use airpope_sjv::models::SubscriptionType;
 ///
 /// let st = SubscriptionType::VM;
 /// assert_eq!(st.to_string(), "vm");
@@ -114,7 +114,7 @@ impl ToString for SubscriptionType {
 /// The manga rating
 ///
 /// ```
-/// use tosho_sjv::models::MangaRating;
+/// use airpope_sjv::models::MangaRating;
 ///
 /// let st = MangaRating::AllAges;
 /// assert_eq!(st.to_string(), "a");
@@ -217,7 +217,7 @@ impl MangaImprint {
     ///
     /// # Examples
     /// ```
-    /// use tosho_sjv::models::MangaImprint;
+    /// use airpope_sjv::models::MangaImprint;
     ///
     /// let ssunday = MangaImprint::ShonenSunday;
     ///

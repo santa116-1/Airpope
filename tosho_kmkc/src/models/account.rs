@@ -1,6 +1,6 @@
 //! A module containing information related to user account.
 //!
-//! If something is missing, please [open an issue](https://github.com/noaione/tosho-mango/issues/new/choose) or a [pull request](https://github.com/noaione/tosho-mango/compare).
+//! If something is missing, please [open an issue](https://github.com/noaione/airpope-mango/issues/new/choose) or a [pull request](https://github.com/noaione/airpope-mango/compare).
 
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
@@ -63,7 +63,7 @@ impl UserPoint {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::UserPoint;
+    /// use airpope_kmkc::models::UserPoint;
     ///
     /// let user_point = UserPoint::new(0, 0);
     ///
@@ -80,7 +80,7 @@ impl UserPoint {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::UserPoint;
+    /// use airpope_kmkc::models::UserPoint;
     ///
     /// let mut user_point = UserPoint::new(10, 10);
     ///
@@ -111,7 +111,7 @@ impl UserPoint {
     ///
     /// # Examples
     /// ```
-    /// use tosho_kmkc::models::UserPoint;
+    /// use airpope_kmkc::models::UserPoint;
     ///
     /// let mut user_point = UserPoint::new(0, 0);
     ///

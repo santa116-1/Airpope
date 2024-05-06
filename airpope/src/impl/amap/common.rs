@@ -1,6 +1,6 @@
 use color_print::cformat;
 use num_format::{Locale, ToFormattedString};
-use tosho_amap::{
+use airpope_amap::{
     constants::BASE_HOST,
     models::{ComicEpisodeInfo, ComicInfo, ComicSimpleInfo, IAPInfo},
     AMClient, SESSION_COOKIE_NAME,
@@ -14,9 +14,9 @@ use crate::{
     term::{get_console, ConsoleChoice},
 };
 
-impl From<super::config::Config> for tosho_amap::AMConfig {
+impl From<super::config::Config> for airpope_amap::AMConfig {
     fn from(config: super::config::Config) -> Self {
-        tosho_amap::AMConfig {
+        airpope_amap::AMConfig {
             token: config.token,
             identifier: config.identifier,
             session_v2: config.session,

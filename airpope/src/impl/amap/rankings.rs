@@ -1,5 +1,5 @@
 use color_print::cformat;
-use tosho_amap::AMClient;
+use airpope_amap::AMClient;
 
 use super::{common::do_print_search_information, config::Config};
 use crate::cli::ExitCode;

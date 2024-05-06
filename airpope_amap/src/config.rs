@@ -1,7 +1,7 @@
 //! Provides the configuration Struct for the client.
 //!
 //! ```rust
-//! use tosho_amap::AMConfig;
+//! use airpope_amap::AMConfig;
 //!
 //! let config = AMConfig {
 //!     token: "123".to_string(),

@@ -1,13 +1,13 @@
 [workspace]
 resolver = "2"
 members = [
-    "tosho",
-    "tosho_musq",
-    "tosho_kmkc",
-    "tosho_amap",
-    "tosho_sjv",
-    "tosho_rbean",
-    "tosho_macros",
+    "airpope",
+    "airpope_musq",
+    "airpope_kmkc",
+    "airpope_amap",
+    "airpope_sjv",
+    "airpope_rbean",
+    "airpope_macros",
 ]
 
 [workspace.package]
@@ -15,8 +15,8 @@ version = "0.5.0-dev"
 edition = "2021"
 authors = ["noaione <noaione@n4o.xyz>"]
 license = "MIT"
-repository = "https://github.com/noaione/tosho-mango"
-homepage = "https://tosho.dev"
+repository = "https://github.com/noaione/airpope-mango"
+homepage = "https://airpope.dev"
 
 [workspace.dependencies]
 tokio = { version = "1.37.0", features = ["full"] }
