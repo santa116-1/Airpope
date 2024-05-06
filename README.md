@@ -31,8 +31,6 @@ This is just a fun side project, and as a disclaimer, I'm not condoning anything
 ```bash
 cargo install --locked airpope
 ```
-
-Or, with [`cargo-binstall`](https://github.com/cargo-bins/cargo-binstall):
 ```bash
 cargo binstall --locked airpope
 ```
