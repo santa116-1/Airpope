@@ -1,21 +1,21 @@
-# airpope-mango
+# airpope
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://socialify.git.ci/noaione/airpope-mango/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Dark">
-  <img alt="airpope-mango Repository Info as Image" src="https://socialify.git.ci/noaione/airpope-mango/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light">
+  <source media="(prefers-color-scheme: dark)" srcset="https://socialify.git.ci/santa116-1/airpope/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Dark">
+  <img alt="airpope Repository Info as Image" src="https://socialify.git.ci/santa116-1/airpope/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light">
 </picture>
 
 <div align="center">
-  <a href="https://github.com/noaione/airpope-mango/actions/workflows/ci.yml"><img src="https://github.com/noaione/airpope-mango/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-  <a href="https://github.com/noaione/airpope-mango/blob/master/LICENSE"><img src="https://img.shields.io/github/license/noaione/airpope-mango" alt="License: MIT" /></a><br />
+  <a href="https://github.com/santa116-1/airpope/actions/workflows/ci.yml"><img src="https://github.com/santa116-1/airpope/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/santa116-1/airpope/blob/master/LICENSE"><img src="https://img.shields.io/github/license/santa116-1/airpope" alt="License: MIT" /></a><br />
   <img alt="Crates.io Version" src="https://img.shields.io/crates/v/airpope">
   <a href="https://crates.io/crates/airpope"><img src="https://img.shields.io/crates/d/airpope?logo=rust" alt="Crates.io Total Downloads" /></a>
-  <a href="https://github.com/noaione/airpope-mango/releases"><img src="https://img.shields.io/github/downloads/noaione/airpope-mango/total?logo=github" alt="GitHub Total Downloads" /></a>
+  <a href="https://github.com/santa116-1/airpope/releases"><img src="https://img.shields.io/github/downloads/santa116-1/airpope/total?logo=github" alt="GitHub Total Downloads" /></a>
   <br /><br />
   <p>A simple downloader for some official mango.</p>
 </div>
 
-`airpope-mango` (or `airpope`) is a downloader but can also be considered an almost full-blown replacement for the app/web version, with the exception of currency purchase, as a simple CLI application.
+`airpope` (or `airpope`) is a downloader but can also be considered an almost full-blown replacement for the app/web version, with the exception of currency purchase, as a simple CLI application.
 
 All of the implementations started as a personal script that I used before I decided to rewrite it into a proper CLI app with the help of other people to figure out some parts that I had trouble with.
 
@@ -50,8 +50,8 @@ You can get the binary by either compiling everything yourself by following thes
 3. Execute `target/release/airpope` (or `target/release/airpope.exe` on Windows).
 
 Alternatively, you can obtain the precompiled binary from:
-- The **Stable** release in the **[Releases](https://github.com/noaione/airpope-mango/releases)** tab.
-- The **Nightly** release from any latest successful commits: [Master CI](https://github.com/noaione/airpope-mango/actions/workflows/ci.yml?query=branch%3Amaster).
+- The **Stable** release in the **[Releases](https://github.com/santa116-1/airpope/releases)** tab.
+- The **Nightly** release from any latest successful commits: [Master CI](https://github.com/santa116-1/airpope/actions/workflows/ci.yml?query=branch%3Amaster).
 
 ## Usage
 
@@ -77,4 +77,4 @@ We're not responsible if your account got deactivated.
 
 ### Legacy Python Code
 
-The codebase has been rewritten in Rust. You can find the original Python version in the [`legacy-snek`](https://github.com/noaione/airpope-mango/tree/legacy-snek) branch.
+The codebase has been rewritten in Rust. You can find the original Python version in the [`legacy-snek`](https://github.com/santa116-1/airpope/tree/legacy-snek) branch.
